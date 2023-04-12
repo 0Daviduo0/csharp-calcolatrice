@@ -97,7 +97,7 @@
                 }
                 else if (y < 0)
                 {
-                    return 1 / Potenza(x, -y); //gestione del caso in cui l'esponente è negativo
+                    return 1 / Potenza(x, -y); //caso in cui y è negativo
                 }
                 else
                 {
