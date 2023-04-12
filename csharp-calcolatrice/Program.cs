@@ -131,9 +131,9 @@
                 //POTENZA
                 Console.WriteLine("Scegli i due numeri da elevare: ");
                 Console.Write("Inserisci base: ");
-                double x = Int32.Parse(Console.ReadLine());
+                int x = Int32.Parse(Console.ReadLine());
                 Console.Write("Inserisci esponente: ");
-                double y = Int32.Parse(Console.ReadLine());
+                int y = Int32.Parse(Console.ReadLine());
                 double result13 = CalcoliHelper.Potenza(x, y);
                 Console.WriteLine($"il numero {x} elevato {y} come risultato ha: {result13}");
             }
