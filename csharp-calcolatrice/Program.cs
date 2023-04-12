@@ -95,6 +95,10 @@
                 {
                     return 1; //se x=0 e y=0 allora il risultato è 1
                 }
+                else if (y < 0)
+                {
+                    return 1 / Potenza(x, -y); //gestione del caso in cui l'esponente è negativo
+                }
                 else
                 {
                     double risultato = 1;
