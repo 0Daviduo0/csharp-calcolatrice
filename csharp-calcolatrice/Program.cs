@@ -75,9 +75,9 @@
             // POTENZA
             public static double Potenza(double x, double y)
             {
-                if (x == 0)
+                if (x == 0 && y==0)
                 {
-                    return (y == 0) ? 1 : 0; //se x=0 e y=0 allora il risultato è 1
+                    return 1; //se x=0 e y=0 allora il risultato è 1
                 }
                 else
                 {
