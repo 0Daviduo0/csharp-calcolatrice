@@ -53,22 +53,38 @@
             // MINIMO
             public static int Minimo(int x, int y)
             {
-                return Math.Min(x, y);
+                if (x < y)
+                    return x;
+
+                else
+                    return y;
             }
             public static double Minimo(double x, double y)
             {
-                return Math.Min(x, y);
+                if (x < y)
+                    return x;
+
+                else
+                    return y;
             }
 
 
             // MASSIMO
             public static int Massimo(int x, int y)
             {
-                return Math.Max(x, y);
+                if (x > y)
+                    return x;
+
+                else
+                    return y;
             }
             public static double Massimo(double x, double y)
             {
-                return Math.Max(x, y);
+                if (x > y)
+                    return x;
+
+                else
+                    return y;
             }
 
 
@@ -81,7 +97,13 @@
                 }
                 else
                 {
-                    return Math.Pow(x, y); //se nè la x nè la y rientrano nei casi allora fare una potenza normale
+                    double risultato = 1;
+                    for (double i = 0; i < y; i++) //se né la x né la y rientrano nei casi allora fare una potenza normale
+                    {
+                        risultato *= x;
+                    }
+                    return risultato;
+
                 }
 
 
